@@ -105,7 +105,7 @@ canvas {
 .marginlr{margin-left: 20px;margin-right: 20px;}
 img{width: 100%;}
 html{font-size: 16px;    font-family: "Microsoft YaHei",Verdana;    font-weight: 100;}
-body,html{margin: 0;padding:0; height: 100%; width: 100%; overflow: hidden; color: #fff;}
+body,html{margin: 0;padding:0; height: 100%; width: 100%; overflow: hidden; color: #fff;background: #f4fffd;}
 ul,li{list-style: none;margin: 0;padding:0; }
 *{font-size: 1rem;box-sizing: border-box;}
 .flex-box{display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
