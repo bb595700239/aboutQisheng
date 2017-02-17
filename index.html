@@ -72,8 +72,23 @@
                     <div class="tit flex-box"><img src="assets/image/page5-1.png">中社联（北京）科技发展有限公司</div>
                     <div class="con">中社联(北京)科技发展有限公司(估值2.5亿，正在与赛伯乐对接中)是一家专业提供社区信息化服务的企业，为国内3000多家社区提供标准化的社区管理服务平台，内容涉及政务、党建、OA、医疗、公共服务、电商等多方面业务。诚米为中社联提供从产品设计到开发维护的全面技术解决方案，并依次推出各平台的移动端，打造了一整套社区化信息互联系统。</div>
                 </div>
-                <div class="pic pic1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s"><img src="assets/image/page5-2.png"></div>
-                <div class="pic pic2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0s"><img src="assets/image/page5-3.png"></div>
+                <div class="swipers">
+                    <div class="swiper-containerg swiper-0217">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="img" src="assets/image/page5-2.png"></div>
+                            <div class="swiper-slide"><img class="img" src="assets/image/page5-4.png"></div>
+                            <div class="swiper-slide"><img class="img" src="assets/image/page5-6.png"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-containerg swiper-02172">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="img" src="assets/image/page5-3.png"></div>
+                            <div class="swiper-slide"><img class="img" src="assets/image/page5-5.png"></div>
+                            <div class="swiper-slide"><img class="img" src="assets/image/page5-7.png"></div>
+                        </div>
+                        <div class="swiper-paginationg swiper-pagination2"></div>
+                    </div>
+                </div>
             </div>
             <div class="item page page6 swiper-slide" id="page6">
                 <div class="txtbox">
@@ -154,6 +169,13 @@
         mySwiper.slideTo(0, 0, true);//切换到第一个slide，速度为1秒
     })
     var mySwiper2 = new Swiper('.swiper-container2', {pagination : '.swiper-pagination2',autoplay : 3000,/*spaceBetween: 30,*/});
+    var mySwiper0217 = new Swiper('.swiper-0217', {/*spaceBetween: 30,*/effect : 'fade',
+fade: {
+  crossFade: false,
+}});
+    var mySwiper02172 = new Swiper('.swiper-02172', {pagination : '.swiper-pagination2',autoplay : 3000,/*spaceBetween: 30,*/});
+    mySwiper0217.params.control = mySwiper02172;//需要在Swiper2初始化后，Swiper1控制Swiper2
+    mySwiper02172.params.control = mySwiper0217;//需要在Swiper1初始化后，Swiper2控制Swiper1
     var mySwiper3 = new Swiper(".swiper-container3", {
     slidesPerView: "auto",
     centeredSlides: !0,
