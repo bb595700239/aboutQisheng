@@ -146,7 +146,9 @@
     </div>
     <span class="start"><b></b></span>
     <script>
-    
+    document.body.ontouchmove = function (e) {
+      e.preventDefault();
+};
     function setarr(cur){
         if(cur==0){
             $('.start').addClass('first')
