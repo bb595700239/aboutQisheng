@@ -329,25 +329,27 @@ fade: {
             $('.longPress').longPress(function(self){
                 $('.longPress').hide();
             })
-            // $(function(){
-            //     var totalImg = $('img').length;
-            //     var currentImg = 0;
-            //     $('img').on('load',function(){
-            //         currentImg++;
-            //         console.log(currentImg)
-            //         if(currentImg === totalImg){
-            //             $('.containerbox').addClass('fadeOutDown animated')
-            //         }
-            //    })
-            // })
             $(function(){
-                document.querySelector("#pic1 img").onload =function(){
-                     $('.containerbox').addClass('fadeOutDown animated')
-                }
+                var totalImg = $('img').length;
+                var currentImg = 0;
+                $('img').on('load',function(){
+                    currentImg++;
+                    if(currentImg === totalImg){
+                        $('.containerbox').addClass('fadeOutDown animated')
+                    }
+               })
                 setTimeout(function(){
                     $('.containerbox').addClass('fadeOutDown animated')
                 },5000)
             })
+            // $(function(){
+            //     document.querySelector("#pic1 img").onload =function(){
+            //          $('.containerbox').addClass('fadeOutDown animated')
+            //     }
+            //     setTimeout(function(){
+            //         $('.containerbox').addClass('fadeOutDown animated')
+            //     },5000)
+            // })
             function IsPC() {//true为PC端，false为手机端
                 var userAgentInfo = navigator.userAgent;
                 var Agents = ["Android", "iPhone",
