@@ -131,6 +131,10 @@ ul,li{list-style: none;margin: 0;padding:0; }
 .page3 .swiper-container2 .longPress.code1{left: 2.25rem;}
 .page3 .swiper-container2 .longPress.code2{left: 7.19rem;}
 .page3 .swiper-container2 .longPress.code3{left: 12.19rem;}
+.swiper-container2{    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;}
 .swiper-container2 .swiper-slide{/*box-shadow: 0px 2px 16px rgba(0,0,0,.2);*/-moz-transform:scale(.9); 
 -webkit-transform:scale(.9); 
 -o-transform:scale(.9); height: 14rem !important;overflow: auto;  }
