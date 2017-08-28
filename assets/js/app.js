@@ -10,7 +10,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 */
 
 /* Otherwise just put the config content (json): */
-$('.item').each(function(){
+/*$('.item').each(function(){
   
   particlesJS($(this).attr('id'),
   
@@ -133,3 +133,4 @@ $('.item').each(function(){
 
 );
 })
+*/

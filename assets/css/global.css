@@ -10,10 +10,10 @@
 .page,.containerbox,.ispc{
     overflow: hidden;
     position: relative;
-     background: -webkit-linear-gradient(left top, #01c0d2 , #22ebcd); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(bottom right, #01c0d2, #22ebcd); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(bottom right, #01c0d2, #22ebcd); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to bottom right, #01c0d2 , #22ebcd); /* 标准的语法（必须放在最后） */
+    background-image: url(http://omulrh4x5.bkt.clouddn.com/pagespagebg.jpg);
+    background-size: auto  100%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .page img{ z-index: 5;}
 
@@ -69,7 +69,7 @@
     -webkit-animation: start 1.5s infinite ease-in-out;
     animation: start 1.5s infinite ease-in-out;
 }
-.start.first{bottom: 50%;right:45%; }
+.start.first{bottom: 3%;right:45%; }
 .last{
     transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
@@ -118,26 +118,39 @@ ul,li{list-style: none;margin: 0;padding:0; }
 .page{padding: 1rem 1.3rem;}
 .page div{z-index: 2;}
 .page .pic{position: absolute;}
-#pic1{ width: 9.53rem; left: 9rem ;bottom: -2.68rem;z-index: 3; position: absolute;}
-.page1 .pic2{ width: 28.56rem;left:12.6rem; bottom:-3.5rem; }
+.page .picgg{
+  height: 100%;
+  width: 100%;
+    left: 0;
+    text-align: center;
+    top: 0;
+    background-size: auto  100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+    
+
+.page1 .pic2{ width: 100%;left:0; top:0; }
+.page2 {background-image: url(http://omulrh4x5.bkt.clouddn.com/pagespage2.jpg);}
 .page2 .txtbox{width: 100%; text-align: center; margin-top: -.4rem}
 .page2 .txtbox .tit{font-size: 2rem;}
 .page2 .txtbox .subtit{font-size: .925rem; margin-top:.3rem; }
 .page2 .pic1{ width: 12.9rem;left: 50%; top:50%;     margin-left: -6rem;margin-top: -9.63rem;}
 .page3 .txtbox .tit,.page4 .txtbox .tit,.page5 .txtbox .tit,.page6 .txtbox .tit,.page7 .txtbox .tit{font-size: 1.3rem; padding: 0 .3rem;}
-.page3 .txtbox .tit img,.page4 .txtbox .tit img,.page5 .txtbox .tit img,.page6 .txtbox .tit img,.page7 .txtbox .tit img{width: 3.84rem; margin-right: 1.5rem;}
+.page3 .txtbox .tit img,.page4 .txtbox .tit img,.page5 .txtbox .tit img,.page6 .txtbox .tit img,.page7 .txtbox .tit img{width: 5.84rem; margin-right: 1rem; margin-left: -1.7rem}
 .page3 .txtbox .con,.page4 .txtbox .con,.page5 .txtbox .con,.page6 .txtbox .con,.page7 .txtbox .con{font-size: 0.8rem;line-height: 1.3rem;margin-top: 1rem;}
 .page3 .swiper-container2 .longPress{ position: absolute;top:3.22rem; width: 4.37rem; }
 .page3 .swiper-container2 .longPress.code1{left: 2.25rem;}
 .page3 .swiper-container2 .longPress.code2{left: 7.19rem;}
 .page3 .swiper-container2 .longPress.code3{left: 12.19rem;}
-.swiper-container2{    -webkit-perspective: 1200px;
-    -moz-perspective: 1200px;
-    -ms-perspective: 1200px;
-    perspective: 1200px;}
+.swiper-container2{-moz-transform:scale(1.1); 
+-webkit-transform:scale(1.1); 
+-o-transform:scale(1.1);}
 .swiper-container2 .swiper-slide{/*box-shadow: 0px 2px 16px rgba(0,0,0,.2);*/-moz-transform:scale(.9); 
 -webkit-transform:scale(.9); 
 -o-transform:scale(.9); height: 14rem !important;overflow: auto;  }
+.swiper-container22 .swiper-slide{height: 11rem !important;}
 
 /*.page4 .txtbox .con{font-size: 0.7rem;line-height: 1.2rem;}*/
 .page4 .longPress{position: absolute;left: 1.62rem;width: 3.4rem; }
